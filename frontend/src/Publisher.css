@@ -1,0 +1,243 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f2937; /* Dark background */
+    color: #e5e7eb;
+  }
+  
+  /* Publisher Container */
+  .publisher-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Navbar (Header) */
+  .publisher-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .publisher-logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #007bff; 
+  }
+  
+  /* Main Content Area (Vertical Layout) */
+  .publisher-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+  }
+  
+  /* Section Container: full width with max-width limit for content */
+  .section-container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Video Section (Live Preview) */
+  .video-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px; /* Increase if you want a wider section */
+    background: #fff; /* Lighter background for contrast */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 1rem auto; /* Center horizontally */
+  }
+
+  .video-section .card {
+    flex: 1; /* Let the video card fill remaining space */
+    background-color: #f9fafb; /* Subtle light background inside */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: none; /* We already have a shadow on .video-section */
+    margin-bottom: 0; /* Remove extra spacing since it's inside .video-section */
+  }
+  
+  .video-section .card-header {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  /* Video Container */
+  .video-section .video-container {
+    background-color: #000;
+    border-radius: 0;
+  }
+  
+  .video-section .video-container video {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align from top down */
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .start-btn {
+    background: linear-gradient(90deg, #10b981, #059669);
+    color: #fff;
+  }
+  
+  .start-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+  }
+  
+  .stop-btn {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    color: #fff;
+  }
+  
+  .stop-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.25);
+  }
+  
+ /* Dashboard Section Container */
+.dashboard-section {
+    display: flex;               /* Place both cards side by side */
+    gap: 2rem;                   /* Spacing between cards */
+    width: 100%;
+    max-width: 900px;            /* Adjust for desired width */
+    margin: 2rem auto;           /* Center horizontally with top/bottom margin */
+    padding: 1rem;               /* Some internal spacing */
+    background-color: #fff;      /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Each Card (Viewers & Logs) */
+  .dashboard-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 1rem auto;
+  }
+  
+  /* Card Header */
+  .dashboard-card-header {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  /* Card Body */
+  .dashboard-card-body {
+    height: 200px;
+    overflow-y: auto;
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: #374151;            /* If content is long, scroll within card */
+  }
+  
+  /* Viewer List Styling */
+  .viewer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .viewer-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  .viewer-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* 'No viewers connected' text */
+  .no-viewers {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  /* Logs Text */
+  .log-entry {
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-section {
+      flex-direction: column;  /* Stack the cards vertically on small screens */
+      padding: 1rem;
+    }
+  }  
+  
+  /* Footer */
+  .publisher-footer {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .publisher-hero {
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .section-container, 
+    .dashboard-section {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
