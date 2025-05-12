@@ -26,7 +26,7 @@
 
 ## Project Overview
 
-This cloud-based SaaS live streaming platform enables real-time video/audio broadcasting between publishers and viewers. It features a React frontend, a Node.js/Express backend, Docker-managed TURN servers for NAT traversal, and seamless WebRTC/WebSocket communication—all deployed on AWS EC2 for scalability and high availability.
+This cloud-based SaaS live streaming platform enables real-time video/audio broadcasting between publishers and viewers. It features a React frontend, a Node.js/Express backend, Docker-managed TURN servers for NAT traversal, and seamless WebRTC/WebSocket communication - all deployed on AWS EC2 for scalability and high availability.
 
 ---
 
