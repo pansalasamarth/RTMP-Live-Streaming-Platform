@@ -4,7 +4,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 
 # Prompt the user for the public IP address
 EC2_PUBLIC_IP=$(curl -s http://checkip.amazonaws.com)
-# EC2_PUBLIC_IP=192.168.238.248
+# EC2_PUBLIC_IP=10.10.15.48
 
 # Validate input
 if [ -z "$EC2_PUBLIC_IP" ]; then
@@ -14,7 +14,7 @@ fi
 
 # Define the absolute path
 PROJECT_DIR="/home/ec2-user/Live-Streaming-Platform"
-# PROJECT_DIR="D:\College\Sem-6\CC\Assignment\Live-Streaming-Platfrom"
+# PROJECT_DIR="D:\Assignment SEM-6\Live-Streaming-Platform-main"
 
 # Configure frontend .env file
 cd "$PROJECT_DIR/frontend" || { echo "Failed to change directory to frontend"; exit 1; }

@@ -4,7 +4,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Publisher.css';
 import axios from 'axios';
-
 import { useParams } from 'react-router';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
