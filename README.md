@@ -1,12 +1,5 @@
 # RTMP Live Streaming Platform with Cloud Integration
 
-**Course**: Cloud Computing (3CS402CC24)
-**Authors**:
-
-* Niraj Chaudhari (22BCE209)
-* Samarth Pansala (22BCE220)
-* Himanshu Parghi (22BCE222)
-
 ---
 
 ## Table of Contents
